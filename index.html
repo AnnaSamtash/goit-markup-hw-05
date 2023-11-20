@@ -55,7 +55,7 @@
     <!-- MAIN -->
 
     <main>
-      <section class="main-page">
+      <section class="main-page" id="main-page">
         <div class="container">
           <h1 class="main-page-title">Effective Solutions for Your Business</h1>
           <button type="button" class="main-page-btn">Order Service</button>
@@ -585,7 +585,126 @@
             </li>
           </ul>
         </div>
+        <div class="form-container">
+          <p class="form-title">Subscribe</p>
+          <form class="footer-form">
+            <label>
+              <input
+                class="footer-form-input"
+                id="footer-form-input"
+                type="text"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-form-btn" type="submit">
+              Subscribe
+              <span>
+                <svg
+                  class="footer-form-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 38 32"
+                >
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- MODAL-PAGE -->
+
+    <div class="modal-page-backdrop is-open">
+      <div class="modal-page-content">
+        <button type="button" class="modal-close-btn">
+          <svg
+            class="modal-close-icon"
+            width="8"
+            height="8"
+            viewBox="0 0 32 32"
+          >
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="modal-page-title">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-page-form" name="submit-form" autocomplete="off">
+          <div class="input-container">
+            <label class="input-label" for="username">Name</label>
+            <input
+              class="form-input"
+              type="text"
+              name="username"
+              id="username"
+              autofocus
+            />
+            <svg class="input-icon" width="18" height="18" viewBox="0 0 32 32">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <div class="input-container">
+            <label class="input-label" for="userphone">Phone</label>
+            <input
+              class="form-input"
+              type="tel"
+              name="userphone"
+              id="userphone"
+            />
+            <svg class="input-icon" width="18" height="24" viewBox="0 0 24 32">
+              <use href="./images/icons.svg#icon-phon"></use>
+            </svg>
+          </div>
+          <div class="input-container">
+            <label class="input-label" for="useremail">Email</label>
+            <input
+              class="form-input"
+              type="email"
+              name="useremail"
+              id="useremail"
+            />
+            <svg class="input-icon" width="18" height="24" viewBox="0 0 24 32">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <div>
+            <label class="input-label">
+              Comment
+              <textarea
+                class="form-comment"
+                rows="5"
+                name="comment"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+          </div>
+        </form>
+        <div class="checkbox-container">
+          <label class="checkbox-label">
+            <input
+              class="checkbox-input"
+              type="checkbox"
+              name="accept"
+              value="true"
+            />
+            <span class="checkbox-input-icon"
+              ><svg
+                class="checkbox-icon"
+                width="10"
+                height="8"
+                viewBox="0 0 40 32"
+              >
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg> </span
+            >I accept the terms and conditions of the
+            <a href="">Privacy Policy</a>
+          </label>
+        </div>
+        <button class="form-button" type="submit">Send</button>
+      </div>
+    </div>
   </body>
 </html>
