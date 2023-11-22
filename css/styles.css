@@ -823,10 +823,10 @@ input::placeholder {
 }
 
 .checkbox-input-icon {
+    display: inline-flex;
     position: absolute;
     top: 0;
     left: 0;
-    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 16px;
