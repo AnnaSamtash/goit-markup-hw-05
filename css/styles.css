@@ -809,8 +809,6 @@ input::placeholder {
     line-height: 1.17;
     letter-spacing: 0.04em;
     margin-left: 24px;
-    display: flex;
-    gap: 8;
 }
 
 .privacy-policy {
